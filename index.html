@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background size contain</title>
+    <style>
+      .image {
+        background-image: url('https://dummyimage.com/50X50/000/fff.png&text=contain');
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* width of the image is smaller than
+        the width of the container. That is why we see
+        the gap filled with the background-color
+        of the container */
+        width: 200px;
+        height: 100px;
+
+        /* background-color of the container */
+        background-color: #e84610;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image"></div>
+  </body>
+</html>
